@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #161616;
+    overflow: hidden;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+}
+.menu .logo{
+    margin-left: 70px;
+}
+.menu .logo a{
+    text-decoration: none;
+    font-family: 'Moniqa Paragraph';
+    font-size: 45px;
+    color: black;
+}
+.menu .ul{
+    display: flex;
+    list-style: none;
+}
+.menu .ul li{
+    margin-right: 70px;
+}
+.menu .ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Moniqa Paragraph';
+    font-size: 25px;
+    border: .5px solid #161616;
+    border-radius: 50%;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    transition: .3s ease-in-out;
+
+}
+.menu .ul li:hover a{
+    background-color: black;
+    transition: .3s ease-in-out;
+    color: white;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#home .main-text{
+    text-align: center;
+
+}
+.line{
+    overflow: hidden;
+
+}
+#home .main-text p{
+    overflow: hidden;
+    font-family: 'Bigilla';
+    font-size: 150px;
+    text-transform: uppercase;
+
+}
+a{
+    text-decoration: none;
+    color: #c9c9c9;
+
+}
+.cursor{
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px,5px);
+}
+.cursor-follow1{
+    background: url(mouthwash.jpg) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow2{
+    background: url(brutal.jpg) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow3{
+    background: url(fatality.jpg) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow4{
+    background: url(aesthetic.jpg) no-repeat 50% 50%;
+    opacity: 0;
+}
+.line1:hover ~ .cursor-follow1{
+    opacity: 1;
+}
+.line2:hover ~ .cursor-follow2{
+    opacity: 1;
+}
+.line3:hover ~ .cursor-follow3{
+    opacity: 1;
+}
+.line4:hover ~ .cursor-follow4{
+    opacity: 1;
+}
+
+/* project.html */
+.body2{
+    background-color: #c9c9c9;
+    transition: .5s ease-in-out;
+
+}
+.project{
+    position: absolute;
+    top: 0;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 120vh;
+    width: 100%;
+}
+.big-txt{
+    color: #c9c9c9;
+    font-family: 'Bigilla';
+    font-size: 150px;
+    text-transform: uppercase;
+
+}
+.big-img{
+    width: 800px;
+    height: 400px;
+    background: url(mouthwash.jpg) no-repeat 50% 50%;
+}
+.big-desc{
+    padding: 0px 100px ;
+    font-family: 'Oswald';
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 50px;
+}
